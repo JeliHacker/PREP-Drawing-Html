@@ -7,6 +7,47 @@
    href = "default.css" />
     </head>
     <body>
-    oh yeah boys
+        <h1 class="giveBorder">How D3 Works: A Complete Explanation</h1>
+        
+        <h2>If you've ever been curious how the d3 algorithm works, look no further because this page contains everything that you will ever need to know about d3 for as long as you live.</h2>
+        
+        
+        <p id="paragraph"></p>
+        <h3>
+            <table class="center" class="containsCode">
+                <tr>
+                    <th>d3</th>
+                    <td>In the words of the great Scott Murray, <q>References the D3 object, so we can access its methods. Our D3 adventure begins here.</q></td>
+                </tr>
+                <tr>
+                    <th>.select</th>
+                    <td>Takes a CSS selector as input and returns a reference to the first element in the DOM (Document Object Model).</td>
+                </tr>
+                
+                <tr>
+                    <th>.append</th>
+                    <td><q>Creates whatever new DOM element you specify and appends it to the end (but just inside) of whatever selection its acting on. </q> </td>
+                </tr>
+                
+                <tr>
+                    <th>.text</th>
+                    <td>Adds a string of text in between the opening and closing tags of the current selection. This will overwrite existing content.</td>
+                </tr>
+                
+                <tr>
+                    <th>style</th>
+                    <td>Allows for HTML attributes and CSS selectors to be set on content.</td>
+                </tr>
+        
+            
+            </table>
+        </h3>
+        
+        <h3 class="important">Pertinent question: will there be times when it is useful to use Javascript to accomplish something that could be done by editing HTML/CSS files? How does one spot these moments?</h3>
     </body>
+    <script>
+           document.getElementById("paragraph").innerHTML= "This is content that I added using Javascript!";
+            //document.getElementById("p").appendChild
+            // d3.select("body").append("p").text("New paragraph!");
+        </script>
 </html>
